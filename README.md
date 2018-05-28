@@ -1,3 +1,5 @@
+# This is a fork from [barcodelib](https://github.com/barnhill/barcodelib) which supports .NET Standard 2 using the [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common) package.
+
 # barcodelib ![Build Status](https://www.travis-ci.org/barnhill/barcodelib.svg?branch=master)
 
 [Download Latest DLL](http://pnuema.com:2500/job/Barcode%20Library/ws/BarcodeLib/bin/Debug/BarcodeLib.dll)
