@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.5.0-rc1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="BarcodeXML.Designer.cs">
+      <DependentUpon>BarcodeXML.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BarcodeXML.xsc">
+      <DependentUpon>BarcodeXML.xsd</DependentUpon>
+    </None>
+    <None Update="BarcodeXML.xsd">
+      <LastGenOutput>BarcodeXML.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="BarcodeXML.xss">
+      <DependentUpon>BarcodeXML.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

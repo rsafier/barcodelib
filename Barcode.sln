@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeLibTest", "BarcodeLibTest\BarcodeLibTest.csproj", "{8DB57BA1-E88C-43D9-AD0E-04BFA6B11C61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeLib", "BarcodeLib\BarcodeLib.csproj", "{F8646414-0C9C-49BB-9DA3-3923BF78A398}"
@@ -23,8 +25,15 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BarcodeDemo", "BarcodeDemo\
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "59259"
+		SlnRelativePath = "BarcodeDemo\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Standard", "Standard", "{F77CA417-6409-4FC1-9A01-A57084424C65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarecodeLib", "Standard\BarecodeLib\BarecodeLib.csproj", "{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard.Test", "Standard\Standard.Test\Standard.Test.csproj", "{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,8 +73,39 @@ Global
 		{F66997B3-1333-4C79-A268-DA9DD62174A2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{F66997B3-1333-4C79-A268-DA9DD62174A2}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{F66997B3-1333-4C79-A268-DA9DD62174A2}.Release|x86.ActiveCfg = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Debug|.NET.Build.0 = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Debug|x86.Build.0 = Debug|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Release|.NET.ActiveCfg = Release|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Release|.NET.Build.0 = Release|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Release|x86.ActiveCfg = Release|Any CPU
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79}.Release|x86.Build.0 = Release|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Debug|.NET.Build.0 = Debug|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Debug|x86.Build.0 = Debug|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Release|.NET.ActiveCfg = Release|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Release|.NET.Build.0 = Release|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Release|x86.ActiveCfg = Release|Any CPU
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{402F1CF2-0B1B-4D07-8EBF-B9E5480CBF79} = {F77CA417-6409-4FC1-9A01-A57084424C65}
+		{598D27C1-54D8-4626-BBB2-1B4706D9DB8F} = {F77CA417-6409-4FC1-9A01-A57084424C65}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35E6F5C7-1E5C-452C-892C-9DE93B3C6CA5}
 	EndGlobalSection
 EndGlobal
